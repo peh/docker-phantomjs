@@ -10,7 +10,7 @@ RUN \
   apt-get autoremove -y && \
   apt-get clean all
 
-ADD "run.sh" "/root/run.sh"
+ADD run.sh /root/
 ENV WEBDRIVER_PORT 8091
 
-CMD ["/root/run.sh"]
+CMD ["/bin/bash", "/root/run.sh"]
