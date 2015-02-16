@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/usr/bin/phantomjs --webdriver=0.0.0.0:$WEBDRIVER_PORT
+/usr/bin/phantomjs --webdriver=$WEBDRIVER_PORT --ignore-ssl-errors=$IGNORE_SSL
