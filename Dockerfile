@@ -12,5 +12,6 @@ RUN \
 
 ADD run.sh /root/
 ENV WEBDRIVER_PORT 8091
+ENV IGNORE_SSL false
 
 CMD ["/bin/bash", "/root/run.sh"]
